@@ -7,15 +7,14 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
-<body>
+<body onload="loading()">
   
- <a href="#sec1">
- <div class="arrow">
-  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+ <!--Loader-->
+ <div id="loader">
  </div>
-</a>
+
  <!--Landing Page-->
   <section class="showcase" id="sec1">
 
@@ -197,56 +196,8 @@
 </footer>
 
 
-
-
-
-
-
-
-<!--
-
-
-
-<section class="our-products" id="sec3">
-  <div class="container">
-    <h2 class="section-title">Our products</h2>
-
-    <article class="product shoe-red spacing">
-      <img src="static/shoe-1.png" alt="" class="product__image">
-      <h3 class="product__title">A really nice shoe</h3>
-      <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
-        perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
-      <a href="" class="btn">Buy now</a>
-    </article>
-
-    <article class="product shoe-white shoe-left spacing">
-      <img src="static/shoe-2.png" alt="" class="product__image">
-      <h3 class="product__title">A really nice shoe</h3>
-      <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
-        perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
-      <a href="" class="btn">Buy now</a>
-    </article>
-
-    <article class="product shoe-blue spacing">
-      <img src="static/shoe-3.png" alt="" class="product__image">
-      <h3 class="product__title">A really nice shoe</h3>
-      <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
-        perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
-      <a href="" class="btn">Buy now</a>
-    </article>
-
-  </div>
-  
-</section>
--->
-
 </body>
 <script>
-const menuToggle = document.querySelector('.toggle');
-const showcase = document.querySelector('.showcase');
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-      })
+
 </script>
 </html>
