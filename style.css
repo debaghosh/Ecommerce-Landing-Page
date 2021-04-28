@@ -267,15 +267,18 @@ header
   max-width: 100%;
 }
 
-.big-img{
-  display: flex;
+
+.slider{
+  display:flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
- 
+  overflow-x: auto;
 }
 
 .big-img-1{
   position: relative;
+  max-width:100%;
 }
 
 .big-img-1 a{
@@ -347,6 +350,7 @@ img{
   text-align: center;
   text-decoration: none;
   color:#000;
+  cursor: pointer;
 }
 
 .featured__item:hover{
