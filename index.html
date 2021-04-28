@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="main.js"></script>
 </head>
 <body>
-    
-
+  
+ <a href="#sec1">
+ <div class="arrow">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+ </div>
+</a>
  <!--Landing Page-->
   <section class="showcase" id="sec1">
 
@@ -21,18 +26,15 @@
     </header>
 
     <!--Video-->
-    <video src="static/shoe.mp4" muted loop autoplay></video>
+    <video src="shoe.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
 
     <!--All Text-->
     <div class="text">
       <h2>Pave the way</h2> 
       <h3>Our new collection</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#sec2">Explore</a>
+      <p>Inspired by Yellowstone National Park. Available now online and in stores.</p>
+      <a href="#sec2">Learn More</a>
     </div>
 
     <!--Social Icons-->
@@ -46,40 +48,164 @@
   <!--Menu-->
   <div class="menu">
     <ul>
-      <li><a href="#sec1">Home</a></li>
-      <li><a href="#sec2">Prices</a></li>
-      <li><a href="#sec3">Products</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Release dates</a></li>
+      <li class="nav-helpers"><input placeholder="Search"></input><img src="loupe.svg"></li>
     </ul>
   </div>
 
   <!--Scroll to top button-->
   <div class="scroll_to_top"><a href="#sec1"></a></div>
 
+
+
+
+<!--SECTION 1.5 -->
+<section class="sale">
+  <div class="text">
+    <h3>Summer sale</h3>
+    <p>Get 20% off full price footwear and sportswear with promo code ABSER. Exclusions apply.</p>
+    <a href="#sec2">Shop Women</a>
+    <a href="#sec2">Shop Men</a>
+  </div>
+  <div class="big-img text">
+    <div class="big-img-1 sale-img-1">
+      <p>Ramp up your Style</p>
+      <a href="#sec2">Shop Now</a>
+      <img src="big-shoe-2.jpeg">
+    </div>
+    <div class="big-img-1 sale-img-2">
+      <p>Pave the way vol. 4</p>
+      <a href="#sec2">Shop Now</a>
+      <img src="big-shoe-4.jpg">
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+
+
 <!--SECTION 2-->
 <section class="featured" id="sec2">
   <div class="container">
     <h2 class="section-title">Featured products</h2>
+    <!--OPTIONS-->
+    <div class="img-selector">
+      <select>
+        <option>GENDER</option>
+        <option>Kids</option>
+        <option>Men</option>
+        <option>Women</option>
+      </select>
+      <select>
+        <option>PRICE</option>
+        <option>1999+</option>
+        <option>3999+</option>
+        <option>5999+</option>
+      </select>
+      <select>
+        <option>CATEGORY</option>
+        <option>Casual</option>
+        <option>Formal</option>
+        <option>Hike</option>
+      </select>
+    </div>
+    <!--IMAGES-->
     <div class="split">
       <a href="#" class="featured__item">
-        <img src="static/shoe-4.png" alt="" class="featured__img">
+        <img src="shoe-4.png" alt="" class="featured__img">
         <p class="featured__details"><span class="price">Rs. 2999</span>Men's Originals Run-DMC</p>
       </a>
       <a href="#" class="featured__item">
-        <img src="static/shoe-5.png" alt="" class="featured__img">
+        <img src="shoe-5.png" alt="" class="featured__img">
         <p class="featured__details"><span class="price">Rs. 3999</span>Women's Originals Primeblue</p>
       </a>
       <a href="#" class="featured__item">
-        <img src="static/shoe-6.png" alt="" class="featured__img">
+        <img src="shoe-6.png" alt="" class="featured__img">
         <p class="featured__details"><span class="price">Rs. 4999</span>Men's Originals Arizona</p>
+      </a>
+      <a href="#" class="featured__item">
+        <img src="shoe-3.png" alt="" class="featured__img">
+        <p class="featured__details"><span class="price">Rs. 3999</span>Women's Originals Starry</p>
+      </a>
+      <a href="#" class="featured__item">
+        <img src="shoe-2.png" alt="" class="featured__img">
+        <p class="featured__details"><span class="price">Rs. 4999</span>Men's Originals Superhero</p>
+      </a>
+      <a href="#" class="featured__item">
+        <img src="shoe-1.png" alt="" class="featured__img">
+        <p class="featured__details"><span class="price">Rs. 2999</span>Women's Originals NYC-champs</p>
       </a>
     </div>
   </div>
 </section>
 
 <!--SECTION 3-->
+<section class="news">
+  <h2 class="section-title">Sign up for news and get 20% off</h2>
+  <div class="sec3-s"><input placeholder="YOUR EMAIL"></input><button>SUBMIT</button></div>
+</section>
 
-<!--SECTION 3-->
+<!--FOOTER-->
+<footer class="footer">
+  <div class="sub-footer-1">
+    <ul>
+      <p>Customer Support</p>
+      <li><a href="#">Get Help</a></li>
+      <li><a href="#">Track Order</a></li>
+      <li><a href="#">Returns & Refunds</a></li>
+      <li><a href="#">Sizing</a></li>
+      <li><a href="#">Promotions</a></li>
+    </ul>
+    <ul>
+      <p>Company Info</p>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Our Stores</a></li>
+      <li><a href="#">Mobile Apps</a></li>
+    </ul>
+    <ul>
+      <p>Partner Sites</p>
+      <li><a href="#">Adidas Outdoor</a></li>
+      <li><a href="#">MX Team</a></li>
+    </ul>
+    <ul>
+      <p>Gift Cards</p>
+      <li><a href="#">Check balance</a></li>
+    </ul>
+    <ul>
+      <p>Privacy & Terms</p>
+      <li><a href="#">Privacy & Terms</a></li>
+      <li><a href="#">statement</a></li>
+      <li><a href="#">terms & conditions</a></li>
+      <li><a href="#">Policy terms</a></li>
+    </ul>
+  </div>
+  <div class="sub-footer-2">
+    <p>English(United States)</p>
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+    <p>2020 XYZ Inc.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<!--
+
+
 
 <section class="our-products" id="sec3">
   <div class="container">
@@ -112,7 +238,7 @@
   </div>
   
 </section>
-
+-->
 
 </body>
 <script>
